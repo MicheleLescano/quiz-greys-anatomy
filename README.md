@@ -1,4 +1,4 @@
-# 🧠 Quiz Grey's Anatomy
+# 🧠 Quiz Grey's Anatomy 🎬🩺
 
 Um quiz divertido e interativo para testar seus conhecimentos sobre a série Grey's Anatomy! Feito com HTML, CSS e JavaScript.
 
@@ -29,9 +29,16 @@ Um quiz divertido e interativo para testar seus conhecimentos sobre a série Gre
 4. Ao acertar todas, você verá uma chuva de confetes 🎊
 
 
+---
+🙋‍♀️ Desenvolvido por
+Michele Lescano 😎
+💻 Estudante de Ciência da Computação
+📫 [chellylescano@gmail.com]
+
+
 
 ## 🚀 Como rodar localmente
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/MicheleLescano.git
+   git clone https://github.com/MicheleLescano/quiz-greys-anatomy
