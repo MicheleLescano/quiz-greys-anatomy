@@ -1,0 +1,161 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; /* Isso centraliza verticalmente */
+        min-height: 100vh;
+        padding: 40px 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: url("https://t4.ftcdn.net/jpg/03/45/88/07/240_F_345880772_zIT2mkdCzTthplO7xqaGGrMspN0jw0ll.jpg") no-repeat center center fixed;
+        background-size: cover;
+        text-align: center;
+        color: #FF13F0;
+ }
+      
+  /* Título */
+  .titulo h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  /* Container principal */
+  .conteudo-jogo, .fim {
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 5px #ff1b7b;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 60vh; /* Altura mínima melhor para responsividade */
+    margin: auto; /* Centraliza horizontalmente */
+    width: 100%;
+    max-width: 800px; /* Limita o tamanho da caixa */
+    border-radius: 12px;
+    flex-direction: column;
+  }
+  
+  /* Texto das perguntas e progresso */
+  .pergunta {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .progresso {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 10px;
+  }
+  
+  /* Botões de resposta */
+  .respostas {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .botao-resposta {
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .botao-resposta:hover {
+    background-color: #01c4e7;
+    transform: scale(1.02);
+  }
+  
+  /* Feedback de respostas */
+  .correta {
+    background-color: #4caf50 !important;
+    color: #fff;
+  }
+  
+  .errada {
+    background-color: #f44336 !important;
+    color: #fff;
+  }
+  
+  /* Tela final */
+  .fim {
+    display: none;
+    text-align: center;
+  }
+  
+  .fim span {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  /* Botão reiniciar */
+  button.reiniciar {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: #FF13F0;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.reiniciar:hover {
+    background-color: #d81b60;
+  }
+  
+  /* Responsividade */
+  @media screen and (max-width: 600px) {
+    .botao-resposta {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  
+    .pergunta {
+      font-size: 1rem;
+    }
+  
+    .titulo h2 {
+      font-size: 1.5rem;
+    }
+  
+    .fim span {
+      font-size: 1.2rem;
+    }
+  }
+ /* Mensagem Animada para quem acertar todas as questões */
+  .mensagem-final.animada {
+    font-size: 28px;
+    color: #FF13F0;
+    animation: pulse 1s ease-in-out infinite;
+    text-shadow: 0 0 8px #ff1b7b, 0 0 12px #FF13F0;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.85;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  
