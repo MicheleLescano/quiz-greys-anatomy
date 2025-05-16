@@ -105,6 +105,6 @@ function reiniciarJogo() {
   acertos = 0;
   conteudoFinal.style.display = "none";
   conteudo.style.display = "block";
-  carregarPergunta(indiceAtual);
+  carregarPergunta();
 }
 
